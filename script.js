@@ -1,39 +1,3 @@
-function derrubarSite() {
-  const conteudo = document.getElementById('conteudo');
-  const bloqueio = document.getElementById('bloqueio');
-
-  if (conteudo) conteudo.style.display = 'none';
-  if (bloqueio) bloqueio.style.display = 'flex';
-}
-
-document.addEventListener('contextmenu', function (e) {
-  e.preventDefault();
-  alert("Right click disabled. 🔒");
-});
-
-
-document.addEventListener('keydown', function (e) {
-  if (
-    e.key === 'F12' ||
-    (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i') ||
-    (e.ctrlKey && e.key.toLowerCase() === 'u') ||
-    (e.ctrlKey && e.key.toLowerCase() === 's')
-  ) {
-    e.preventDefault();
-    derrubarSite();
-  }
-});
-
-
-document.addEventListener('keyup', function (e) {
-  if (e.key === 'PrintScreen') {
-    navigator.clipboard.writeText('');
-    derrubarSite();
-  }
-});
-
-
-
 const form = document.getElementById('formulario-contato');
 const successMessage = document.getElementById('success-message');
 
