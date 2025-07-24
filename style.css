@@ -12,7 +12,7 @@
     --navBar: rgba(14, 22, 43, 0.8);
     --navBarAfter: linear-gradient(90deg, #4f46e5, #7c3aed);
     --circleContainer: rgba(23, 22, 71, 0.87);
-    --corH1: #78A0FF;
+    --corH1: #4262ad;
     --fundoSobre: rgba(255, 255, 255, 0.05);
     --fundoMeusProjetos: rgba(255, 255, 255, 0.05);
     --paragrafoProjeto: rgba(226, 232, 240, 0.8);
@@ -109,8 +109,8 @@ body {
 }
 
 .circle-container {
-    width: 25rem;
-    height: 25rem;
+    width: 22rem;
+    height: 22rem;
     border-radius: 50%;
     overflow: hidden;
     border: 0.15rem solid var(--vidro);
@@ -126,7 +126,6 @@ body {
     object-position: center 0.6rem;
     object-fit: contain;
 }
-
 
 .container__sobre {
     display: flex;
@@ -299,6 +298,7 @@ textarea:hover {
   margin-right: 8px;
   bottom: -0.2rem;
 }
+
 #success-message .checkmark::after {
   content: '';
   position: absolute;
@@ -625,6 +625,6 @@ textarea:hover {
     .footer {
         text-align: center;
     }
-}
+}                       
 
 
